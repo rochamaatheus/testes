@@ -1,0 +1,42 @@
+.login-box {
+  margin: 5rem auto;
+  max-width: 25rem;
+  padding: 2.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: #fff;
+}
+.login-box h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.login-box .user-box {
+  position: relative;
+}
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  border: none;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.login-box .user-box input:focus + label,
+.login-box .user-box input:valid + label {
+  top: -30px;
+  color: #03e9f4;
+  font-size: .75rem;
+}
