@@ -2,7 +2,7 @@
 
 <h2>🤔 Sobre</h2>
 
-Aqui estão alguns estudos que fiz no CSS. Tem testes e alguns códigos interessantes que vi na internet no qual decidi adaptar para mim.
+Aqui estão alguns estudos que fiz no CSS. Aqui é possível encontrar testes e alguns códigos interessantes que vi na internet no qual decidi adaptar para mim.
 
 <hr>
 
