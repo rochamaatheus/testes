@@ -1,8 +1,8 @@
-<h1>Estudos-CSS</h1>
+<h1>Testes</h1>
 
 <h2>🤔 Sobre</h2>
 
-Aqui estão alguns estudos que fiz no CSS. Aqui é possível encontrar testes e alguns códigos interessantes que vi na internet no qual decidi adaptar para mim.
+Aqui estão alguns estudos que fiz no HTML, CSS e JavaScript. Aqui é possível encontrar testes e alguns códigos interessantes que vi na internet no qual decidi estudar, entender e adaptar para mim.
 
 <hr>
 
@@ -10,6 +10,7 @@ Aqui estão alguns estudos que fiz no CSS. Aqui é possível encontrar testes e 
 
 - **HTML5**
 - **CSS3**
+- **JAVASCRIPT**
 
 <hr>
 
@@ -17,10 +18,10 @@ Aqui estão alguns estudos que fiz no CSS. Aqui é possível encontrar testes e 
 
 ```bash
 # Clone o repositório
-git clone https://github.com/rochamaatheus/estudos-css
+git clone https://github.com/rochamaatheus/testes
 
 # Entre no diretório
-cd estudos-css
+cd testes
 ```
 
 <hr>
