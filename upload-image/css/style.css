@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.picture-input {
+  display: none;
+}
+.picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  background-color: #ccc;
+  color: #aaa;
+  border: 1px solid;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: .2s;
+}
+.picture:hover {
+  color: #999;
+  background-color: #bbb;
+}
