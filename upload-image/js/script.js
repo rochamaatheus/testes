@@ -34,4 +34,5 @@ inputFile.addEventListener('change', function(e) {
 })
 function limpar() {
   pictureImg.innerHTML = pictureImgTxt
+  picture.style.height = '400px'
 }
