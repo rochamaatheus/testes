@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="./css/style.css
   ">
 </head>
+
 <body>
   <h1>Upload de Imagens</h1>
 
@@ -18,9 +20,46 @@
       <span class="picture-image"></span>
     </label>
     <p>
-      <input type="reset" value="Limpar" onclick="limpar()">
+      <input type="reset" value="Limpar">
     </p>
   </form>
-  <script src="./js/script.js"></script>
+  
+  <script src="../global/jQuery/jQuery.js"></script>
+  <script>
+    const pic = $('.picture');
+    const input = $('.picture-input');
+    const picImg = $('.picture-image');
+    const picText = 'Choose an image';
+    picImg.html(picText)
+    input.on('change', function(e) {
+      const target = e.target;
+      const file = target.files[0]
+      if(file) {
+        const reader = new FileReader()
+        reader.addEventListener('load', function(e) {
+          const readerTarget = e.target
+          const img = $('<img>').attr({
+            src: readerTarget.result,
+            alt: 'Imagem'
+          })
+          img.on('load', function() {
+            if(this.height > 400) {
+              img.css({height:'400px'})
+            }else {
+              pic.css({height:'fit-content'})
+            }
+          })
+          picImg.html('')
+          picImg.append(img)
+        })
+        reader.readAsDataURL(file)
+      }
+    })
+    $('input[type=reset]').on('click', function() {
+      picImg.html(picText)
+      pic.css({height:'400px'})
+    })
+  </script>
 </body>
+
 </html>
